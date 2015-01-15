@@ -1,0 +1,19 @@
+cell has 9 possible values
+if can reduce values down to one, that is the answer for that cell
+read-in puzzle from file
+create a collection of cells 9-wide x 9-tall
+find cells we dont have a set value for (80 set values, 1 unset val)
+use the known values to reduce the possibilites in the unknown values
+  (through a couple of different algorithms)
+until we get to 1 possibility - set that value for the cell
+use that info to reduce possibilities in any other unknown cells
+  as the algorithm evolves...
+
+1. build a cell
+2 situations for cell value:
+either the value is dictated
+or, the cell should be able to figure out its own by a deduction process
+
+!!value - way to set a truthy to true, or falsy to false
+    nil or false will become false
+    everything else will become true
